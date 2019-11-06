@@ -23,5 +23,6 @@ sudo ./dsvpn server dsvpn.key auto
 ## Run on client
 ```
 sudo ./dsvpn client dsvpn.key <server-public-ip>  
+> Copy dsvpn.key from server.
 ```
 
