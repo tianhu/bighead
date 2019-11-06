@@ -1,4 +1,4 @@
-![picture](wireguard.png)
+![picture](dsvpn-logo.png)
 
 # Work in process...
 
