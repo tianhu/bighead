@@ -24,4 +24,5 @@ sudo ./dsvpn server dsvpn.key auto
 ```
 sudo ./dsvpn client dsvpn.key <server-public-ip>  
 ```
-> Copy dsvpn.key from server.
+> Copy dsvpn.key from server.  
+> Set DNS to 8.8.8.8 by yourself.
