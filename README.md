@@ -17,11 +17,11 @@ cat dsvpn.key | base64
 
 ## Run on server
 ```
-dsvpn server dsvpn.key auto  
+sudo ./dsvpn server dsvpn.key auto  
 ```
 
 ## Run on client
 ```
-dsvpn client dsvpn.key <server-public-ip>  
+sudo ./dsvpn client dsvpn.key <server-public-ip>  
 ```
 
