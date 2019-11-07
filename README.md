@@ -4,6 +4,7 @@
 
 ## Make dsvpn
 ```
+sudo apt install build-essential  
 git clone https://github.com/jedisct1/dsvpn.git  
 cd dsvpn  
 make  
