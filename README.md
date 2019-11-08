@@ -25,8 +25,8 @@ sudo cp dsvpn /usr/local/bin
 sudo cp dsvpn.key /usr/local/etc  
 sudo vi /etc/systemd/system/dsvpn.service  
 ```
-> Copy below content.
->  
+Copy below content.
+  
 >> [Unit]  
 >> Description=DSVPN  
 >>  
@@ -75,8 +75,8 @@ You may want to specify a custom DNS server to resolve some blocked domain names
 sudo vi /etc/systemd/resolved.conf  
 ```
 
-> Set below settings.  
->  
+Set below settings.  
+  
 >> [Resolve]  
 >> DNS=8.8.8.8 8.8.4.4  
 >> Domains=~.  
