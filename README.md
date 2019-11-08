@@ -21,7 +21,7 @@ make
 dd if=/dev/urandom of=dsvpn.key count=1 bs=32  
 ```
 
-## Create service
+### Create service
 ```
 sudo cp dsvpn /usr/local/bin  
 sudo cp dsvpn.key /usr/local/etc  
