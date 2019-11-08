@@ -27,16 +27,16 @@ sudo vi /etc/systemd/system/dsvpn.service
 ```
 Copy below content.
   
->> [Unit]  
->> Description=DSVPN  
->>  
->> [Service]  
->> ExecStart=/usr/local/bin/dsvpn server /usr/local/etc/dsvpn.key  
->> Restart=always  
->> RestartSec=30  
->>  
->> [Install]  
->> WantedBy=network.target  
+> [Unit]  
+> Description=DSVPN  
+>  
+> [Service]  
+> ExecStart=/usr/local/bin/dsvpn server /usr/local/etc/dsvpn.key  
+> Restart=always  
+> RestartSec=30  
+>  
+> [Install]  
+> WantedBy=network.target  
 
 ```
 sudo systemctl enable dsvpn.service  
@@ -77,9 +77,9 @@ sudo vi /etc/systemd/resolved.conf
 
 Set below settings.  
   
->> [Resolve]  
->> DNS=8.8.8.8 8.8.4.4  
->> Domains=~.  
+> [Resolve]  
+> DNS=8.8.8.8 8.8.4.4  
+> Domains=~.  
 
 ```
 sudo systemctl restart systemd-resolved  
