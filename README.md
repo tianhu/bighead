@@ -2,7 +2,9 @@
 
 # Setup a peer to peer secure tunnel with DSVPN
 
-This guide shows you my installation setps to setup a DSVPN server on my Azure VPS and a client on my local machine.
+This guide shows you my installation setps to setup a DSVPN server on my Azure VPS and a client on my local machine.  
+  
+DSVPN means "Dead Simple VPN" (https://github.com/jedisct1/dsvpn)  
 
 ## Server side installation
 
