@@ -1,10 +1,10 @@
 ![picture](dsvpn-logo.png)
 
-# Setup Peer to peer secure tunnel with DSVPN
+# Setup a peer to peer secure tunnel with DSVPN
 
-This guide show you my installation setps to setup a DSVPN server on my Azure VPS and a client on my local machine.
+This guide shows you my installation setps to setup a DSVPN server on my Azure VPS and a client on my local machine.
 
-## Server
+## Server side installation
 
 ### Make dsvpn
 ```
@@ -29,12 +29,12 @@ sudo vi /etc/systemd/system/dsvpn.service
 >  
 >> [Unit]  
 >> Description=DSVPN  
-  
+>>  
 >> [Service]  
 >> ExecStart=/usr/local/bin/dsvpn server /usr/local/etc/dsvpn.key  
 >> Restart=always  
 >> RestartSec=30  
-  
+>>  
 >> [Install]  
 >> WantedBy=network.target  
 
@@ -43,7 +43,7 @@ sudo systemctl enable dsvpn.service
 sudo systemctl start dsvpn.service  
 ```
 
-## Client
+## Client side installation
 
 ### Make dsvpn
 ```
@@ -59,21 +59,24 @@ make
 scp <user>@<server-public-ip>:/usr/local/etc/dsvpn.key .
 ```
 
-### Run DSVPN
+### Launch DSVPN on demand by command line
 
 ```
 sudo ./dsvpn client dsvpn.key <server-public-ip>  
 ```
 
-> Use Ctrl-C or `sudo pkill dsvpn` to stop dsvpn.  
+> Use `Ctrl-C` or `sudo pkill dsvpn` to stop.  
 
 ### Setup DNS
+
+You may want to specify a custom DNS server to resolve some blocked domain names in some countries.  
 
 ```
 sudo vi /etc/systemd/resolved.conf  
 ```
 
-> Set below settings. 
+> Set below settings.  
+>  
 >> [Resolve]  
 >> DNS=8.8.8.8 8.8.4.4  
 >> Domains=~.  
