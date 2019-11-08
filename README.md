@@ -67,9 +67,9 @@ sudo ./dsvpn client dsvpn.key <server-public-ip>
 
 > Use `Ctrl-C` or `sudo pkill dsvpn` to stop.  
 
-### Setup DNS
+### Customize DNS
 
-You may want to specify a custom DNS server to resolve some blocked domain names in some countries.  
+You may want to specify an external DNS server to resolve some blocked domain names in some countries.  
 
 ```
 sudo vi /etc/systemd/resolved.conf  
